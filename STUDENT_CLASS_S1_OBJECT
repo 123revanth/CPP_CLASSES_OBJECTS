@@ -1,0 +1,59 @@
+#include <iostream>
+using namespace std;
+
+class student {
+public:
+	string name;
+	int RollNo;
+	void Set_Grade(string str)
+	{
+		grade = str;
+	}
+	string Get_Grade()
+	{
+		return grade;
+
+	}
+	student() 
+	{
+		name = "";
+		RollNo = 0;
+		grade = "";
+	}
+	
+private:
+	string grade;
+	
+  };
+
+
+int main()
+{
+	student s1;
+	string nameOFstudent;
+	cout << "enter your name:";
+	cin >> nameOFstudent;
+
+	s1.name = nameOFstudent;
+
+	int rollnoOFstudent;
+	cout << "enter your roll no:";
+	cin >> rollnoOFstudent;
+	
+	s1.RollNo = rollnoOFstudent;
+
+	string gradeOFstudent;
+	cout << "enter your grade:";
+	cin >> gradeOFstudent;
+	
+	s1.Set_Grade(gradeOFstudent);
+	
+	cout << "____________________________________________________________" << endl<<endl;
+
+	cout <<"Student name:"<< s1.name<<endl;
+	cout <<"Student RollNo:"<< s1.RollNo<<endl;
+	cout << "Student grade:" << s1.Get_Grade()<<endl;
+
+
+	return 0;
+}
