@@ -34,7 +34,8 @@ int main(){
     cout<<"enter the number that you want to search:";
     cin>>key;
 
-    cout<<linSearch(inp,key,arr);
+    if(linSearch(inp,key,arr) == 1) cout<<"the number entered is located in the array";
+    else cout<<"number entered is not located in the array";
 
     return 0;
 }
