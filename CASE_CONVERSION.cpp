@@ -12,6 +12,7 @@ int main(){
     
     for(int i =0;i<input.size();i++){
         if(input[i] >= 'a' && input[i] <= 'z')input[i] -= 32;
+        else if(input[i] == ' ')cout<<" ";
         else input[i] += 32;
     }
 
